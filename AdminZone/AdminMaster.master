@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminZone_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="../GeneralMasterStyle/AdminStyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="outer">
+        <div id="header">
+            <div id="logo">
+                <img src="../images/logo.jpg" height="150px" width="150px" style="border-radius:10px 0px 0px 0px;" />
+            </div>
+            <div id="sitetitle">GARBAGE CLEANING SERVICE</div>
+        </div>
+        <div id="main">
+            <div id="LMain">
+                <asp:Menu ID="menu1" runat="server">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/AdminZone/Home.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Request Management" Value="Request Management" NavigateUrl="~/AdminZone/RequestMgmt.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Enquairy Management" Value="Enquairy Management" NavigateUrl="~/AdminZone/EnquairyMgmt.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Notification" Value="Notification" NavigateUrl="~/AdminZone/Notification.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Send SMS" Value="Send SMS" NavigateUrl="~/AdminZone/SendSMS.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Change Password" Value="Change Password" NavigateUrl="~/AdminZone/ChangePasswd.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/AdminZone/AdminLogout.aspx"></asp:MenuItem>
+                    </Items>
+                    <StaticMenuItemStyle BackColor="#CCFFFF" Font-Bold="False" Font-Size="20px" ForeColor="black" HorizontalPadding="5px" VerticalPadding="30px" />
+
+                </asp:Menu>
+            </div>
+            <div id="RMain">
+                <asp:ContentPlaceHolder ID="CPHMain" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright &copy; To :Goverment Girls Polytechnic Varanasi.
+        </div>
+    </div>
+    </form>
+</body>
+</html>

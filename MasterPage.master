@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>GCS</title>  
+    <asp:ContentPlaceHolder ID="CPHHead" runat="server">
+
+    </asp:ContentPlaceHolder> 
+    <link href="GeneralMasterStyle/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="outer">
+        <div id="header">
+            <div id="logo">
+<img src="images/logo.jpg" height="130" width="150" style="border-radius:20px 0px 0px 0px;" />
+            </div>
+            <div id="sitetitle">GARBAGE CLEANING SERVICE</div>
+        </div>
+        <div id="menu">
+            <asp:Menu ID="menu1" runat="server" Height="10px" Orientation="Horizontal">
+                <Items>
+                    <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/index.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="ABOUT US" Value="ABOUT US" NavigateUrl="~/aboutus.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="KABAD REQUEST" Value="KABAD REQUEST" NavigateUrl="~/KabadRequest.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="IMAGE GALLERY" Value="IMAGE GALLERY" NavigateUrl="~/imagegallery.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="RATE LIST" Value="RATE LIST" NavigateUrl="~/ratelist.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="CONTACT US" Value="CONTACT US" NavigateUrl="~/contactUs.aspx"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle Font-Underline="True" ForeColor="green" />
+                <StaticMenuItemStyle BorderColor="Silver" BorderStyle="None" Font-Bold="False" Font-Names="Arial" Font-Underline="False" ForeColor="#666666" HorizontalPadding="30px" VerticalPadding="15px" />
+            </asp:Menu>
+        </div>
+        <div id="main">
+            <div id="Lmain">
+                We Provide Online GarbageMan Services For !!!
+               <br />
+                <div class="box"><a><img src="images/individual.jpg" height="90" width="90" /><br />Individual</a></div>
+                <div class="box"><a><img src="images/society2.jpg" height="90" width="90" /><br />Society</a></div>
+                <div class="box"><a><img src="images/apartment2.jpg" height="90" width="90" /><br />Apartment</a></div>
+                <div class="box"><a><img src="images/industry2.gif" height="90" width="90" /><br />Industry</a></div>
+                <div class="box"><a><img src="images/orga.jpg" height="90" width="90" /><br />Organisation</a></div>
+				
+            </div>
+            <div id="Rmain">
+            <asp:ContentPlaceHolder ID="CPHMain" runat="server">
+
+            </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="footer">
+           <div id="f1">
+                <h2 style="color:black;">Commercial/Roll Off</h2>
+                Delivery and pickup of your <br />roll-off and dumpster.
+                <img src="images/tank.png" height="100" width="200" /><br />
+                &nbsp;    &nbsp;    &nbsp;    &nbsp;    &nbsp;   
+                <input type="button" value="ORDER" style="height:30px; width:80px; color:white; background-color:green; font-family:Arial; border-radius:5px;" />
+                   </div>
+            <div id="f2">
+              <h2 style="color:black;">Contact Us</h2>
+                Shop No-1,1st Floor,Shiv Market,Ashok<br />
+                Vihar,Back Side of Ashok Vihar Police<br />
+                Station,Delhi-110052.<br /><br />
+                Email : <a href="http://www.mwbservices2014@gmail.com" target="_blank" style="color:green"> mwbservices2014@gmail.com</a><br />
+                Email : <a href="http://www.theonlineKabadiwala@gmail.com" target="_blank" style="color:green"> theonlineKabadiwala@gmail.com</a><br />
+                011-47633441<br />
+                011-47533441
+                   </div>
+            <div id="f3">
+                 <h2 style="color:black;">Social Media</h2><br />
+                <a href="http://www.facebook.com" target="_blank"><img src="images/1.png" style="border-radius:50px;" /></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="images/2.png" style="border-radius:50px;" /></a>
+                <a href="http://www.linkedin.com" target="_blank"><img src="images/3.png" style="border-radius:50px;" /></a>
+                <a href="http://www.youtube.com" target="_blank"><img src="images/4.png" style="border-radius:50px;" /></a>
+            </div>
+        </div>
+        <div id="Mainfooter">
+           
+        </div>
+    </div>
+    </form>
+</body>
+</html>

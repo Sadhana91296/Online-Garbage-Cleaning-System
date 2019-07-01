@@ -1,0 +1,82 @@
+﻿body {
+    margin:0px auto;
+    background-image:url('http://localhost:34977/GarbageCleaningSystem/images/Nature-green-blurred-background.jpg');
+    background-repeat:no-repeat;
+    padding-top:30px;
+    padding-bottom:20px;
+    background-size:cover;
+    background-color:green;
+}
+#outer
+{
+    height:0px auto;
+    width:1000px;
+    float:left;
+    margin-left:120px;
+}
+#header
+{
+    height:150px;
+    width:1000px;
+    background-color:white;
+    float:left;
+    border-radius:20px 20px 0px 0px;
+    margin-bottom:3px;
+    border:1px solid green;
+}
+#logo
+{
+    height:150px;
+    width:150px;
+    float:left;
+    border-radius:20px 0px 0px 0px;
+}
+#sitetitle
+{
+    height:150px;
+    width:850px;
+    color:green;
+    float:left;
+    font-family:'Baskerville Old Face';
+    font-size:50px;
+    text-align:center;
+    color:green;
+    padding-top:38px;
+    text-shadow:2px 2px 2px black;
+}
+#main
+{
+    height:650px;
+    width:1000px;
+    float:left;
+    background-color:white;
+    padding-top:5px;
+}
+#LMain
+{
+    height:650px;
+    width:200px;
+    float:left;
+    background-color:#CCFFFF;
+    text-shadow:1px 1px 1px green;
+}
+#RMain
+{
+    height:650px;
+    width:800px;
+    float:left;
+}
+#footer
+{
+    height:42px;
+    width:1000px;
+    float:left;
+    background-color:#DCDCDC;
+    margin-bottom:50px;
+   border-radius:0px 0px 10px 10px;
+   margin-top:3px;
+   text-align:end;
+   padding-top:8px;
+   font-size:20px;
+  
+}
