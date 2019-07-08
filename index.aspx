@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>GCS</title>  
+    <title>OnlineGCS</title>  
     <link href="GeneralMasterStyle/StyleSheet.css" rel="stylesheet" type="text/css" />
     <script>
         var allimages = ["images/slide1.png", "images/slide2.png", "images/slide3.png", "images/slide4.png ", "images/slide4.png", "images/slide5.png"];
